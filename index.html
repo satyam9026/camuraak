@@ -1,26 +1,9 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-<meta name="hosting-provider" content="Netlify">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>trixt</title>
-
-<!-- Font Awesome Icons -->
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
-    rel="stylesheet">
-
-<!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -37,477 +20,433 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2386801402164034&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
 
-<style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
+    <title>CA Nitin Murarka | Learn Trading Simply</title>
+     <link rel="stylesheet" href="style.css">
 
-    body {
-        background-color: #23083b;
-        color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        padding: 20px;
-    }
+    <meta
+        name="description"
+        content="Join CA Nitin Murarka's free Telegram learning community and learn Entry, Target and Stop-Loss through simple chart examples."
+    >
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    /* ==============================
-       2 SECOND PAGE LOADER
-    ============================== */
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
-    #page-loader {
-        position: fixed;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        background: #23083b;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 99999;
-        transition: opacity 0.5s ease, visibility 0.5s ease;
-    }
-
-    #page-loader.hide {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
-
-    .loader-spinner {
-        width: 65px;
-        height: 65px;
-        border: 6px solid rgba(255, 204, 0, 0.20);
-        border-top: 6px solid #ffcc00;
-        border-radius: 50%;
-        animation: loader-spin 0.8s linear infinite;
-    }
-
-    .loader-text {
-        margin-top: 18px;
-        color: #ffcc00;
-        font-size: 15px;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
-
-    @keyframes loader-spin {
-        to {
-            transform: rotate(360deg);
-        }
-    }
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
 
-    /* ==============================
-       MAIN WEBSITE
-    ============================== */
-
-
-    .container {
-        max-width: 450px;
-        width: 100%;
-        text-align: center;
-        padding: 20px 15px;
-    }
-
-
-    /* Profile Image Styles */
-
-    .profile-container {
-        position: relative;
-        width: 180px;
-        height: 180px;
-        margin: 0 auto 25px auto;
-    }
-
-    .profile-img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid #ffcc00;
-        box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
-    }
-
-
-    /* Badge Style */
-
-    .badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        border: 1.5px solid #ffcc00;
-        color: #ffcc00;
-        padding: 6px 16px;
-        border-radius: 30px;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        margin-bottom: 25px;
-        text-transform: uppercase;
-    }
-
-
-    /* Main Headings */
-
-    .main-title {
-        color: #ffa500;
-        font-size: 26px;
-        font-weight: 800;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        margin-bottom: 2px;
-    }
-
-    .sub-title {
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-bottom: 30px;
-    }
-
-
-    /* VIP Button */
-
-    .vip-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        background: linear-gradient(180deg, #ffb700, #ff8800);
-        color: #000000;
-        font-weight: 700;
-        font-size: 14px;
-        padding: 12px 30px;
-        border-radius: 30px;
-        text-decoration: none;
-        width: 85%;
-        margin: 0 auto 20px auto;
-        box-shadow: 0 4px 15px rgba(255, 136, 0, 0.3);
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-
-
-    /* Timer Box */
-
-    .timer-box {
-        color: #ffcc00;
-        font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-
-
-    /* Profit Section */
-
-    .profit-text {
-        font-size: 16px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        text-transform: uppercase;
-    }
-
-    .profit-amount {
-        color: #ffcc00;
-        font-size: 24px;
-        font-weight: 800;
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-    }
-
-
-    /* Active Traders */
-
-    .traders-count {
-        color: #bfaec9;
-        font-size: 13px;
-        font-weight: 400;
-        margin-bottom: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-    }
-
-
-    /* Action Buttons */
-
-    .action-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        width: 100%;
-        padding: 18px;
-        border-radius: 40px;
-        font-size: 20px;
-        font-weight: 700;
-        text-decoration: none;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        transition: transform 0.2s ease;
-    }
-
-    .action-btn:active {
-        transform: scale(0.98);
-    }
-
-
-    /* Green Yellow Button */
-
-    .btn-join-now {
-        background: linear-gradient(90deg, #00e676, #ffeb3b);
-        color: #000000;
-    }
-
-
-    /* Telegram Button */
-
-    .btn-telegram {
-        background-color: #0088cc;
-        color: #ffffff;
-        margin-bottom: 0;
-    }
-
-</style>
-
+   
 </head>
+
 
 <body>
 
-```
-<!-- ==============================
-     2 SECOND LOADER
-============================== -->
-
-<div id="page-loader">
-
-    <div class="loader-spinner"></div>
-
-    <div class="loader-text">
-        LOADING...
-    </div>
-
-</div>
-
-
-
-<!-- ==============================
-     MAIN WEBSITE CONTENT
-============================== -->
 
 <div class="container">
 
 
-    <!-- Profile Image -->
+  
 
-    <div class="profile-container">
+    <div class="top-bar">
 
-        <img src="image.png"
-            alt="Pankaj Bhardwaj"
-            class="profile-img">
+        <span class="online-dot"></span>
 
-    </div>
-
-
-
-    <!-- SEBI Badge -->
-
-    <div class="badge">
-
-        <i class="fa-solid fa-chart-line"></i>
-
-        SEBI Market Insights
+        Free Telegram Learning Community
 
     </div>
 
 
 
-    <!-- Name -->
 
-    <h1 class="main-title">
-       𝙉𝙄𝙏𝙄𝙉 TRADER
+
+    <div class="avatar">
+
+       
+
+        <img
+            src="image.png"
+            alt="CA Nitin Murarka"
+        >
+
+    </div>
+
+
+    <div class="verified">
+        ✓
+    </div>
+
+
+
+    <h1 class="name">
+        CA Nitin Murarka
     </h1>
 
-    <h2 class="sub-title">
-        Original™
-    </h2>
+
+    <p class="tagline">
+        📊 Learn Trading Simply
+    </p>
 
 
 
-    <!-- VIP Button -->
+    <div class="rating">
 
-    <a href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
-        target="_blank"
-        class="vip-btn">
+        <b>★★★★★</b>
 
-        <i class="fa-solid fa-crown"></i>
+        <small>
+            Beginner-Friendly Learning
+        </small>
 
-        Join VIP Channel
+    </div>
+
+
+
+    <!-- =====================================
+         TOP TELEGRAM BUTTON
+    ====================================== -->
+
+    <a
+        class="btn top-button join-link"
+        href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
+    >
+
+        <span class="telegram-icon">
+
+            <svg viewBox="0 0 24 24">
+
+                <path
+                    d="M21.8 3.2 18.5 20c-.25 1.18-.91 1.47-1.85.92l-5-3.68-2.41 2.32c-.27.27-.49.49-1 .49l.36-5.09 9.26-8.37c.4-.36-.09-.56-.63-.2L5.78 13.6.85 12.06c-1.07-.34-1.09-1.07.22-1.58L20.35 3c.9-.33 1.68.2 1.45.2Z"
+                />
+
+            </svg>
+
+        </span>
+
+        Join Free Telegram Channel →
+
+    </a>
+
+
+    <p class="free-text">
+        100% free · No registration · Beginner friendly
+    </p>
+
+
+
+    <!-- =====================================
+         STATS
+    ====================================== -->
+
+    <div class="stats">
+
+
+        <div class="stat">
+
+            <div class="stat-num">
+                3 Point
+            </div>
+
+            <div class="stat-lbl">
+                Method
+            </div>
+
+        </div>
+
+
+
+        <div class="stat">
+
+            <div class="stat-num">
+                FREE
+            </div>
+
+            <div class="stat-lbl">
+                Community
+            </div>
+
+        </div>
+
+
+
+        <div class="stat">
+
+            <div class="stat-num">
+                Simple
+            </div>
+
+            <div class="stat-lbl">
+                Learning
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================
+         MAIN TEXT
+    ====================================== -->
+
+    <p class="pitch">
+
+        Learn
+
+        <span>
+            Entry, Target & Stop-Loss
+        </span>
+
+        with CA Nitin Murarka.
+
+    </p>
+
+
+    <p class="sub">
+
+        Learn through simple chart examples and follow a clear,
+        repeatable framework designed to help beginners understand
+        charts and basic risk management.
+
+    </p>
+
+
+
+    <!-- =====================================
+         HIGHLIGHT
+    ====================================== -->
+
+    <div class="urgency">
+
+        🔥 Start learning with our free Telegram community
+
+    </div>
+
+
+
+   
+
+    <a
+        class="btn join-link"
+        href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
+    >
+
+        <span class="telegram-icon">
+
+            <svg viewBox="0 0 24 24">
+
+                <path
+                    d="M21.8 3.2 18.5 20c-.25 1.18-.91 1.47-1.85.92l-5-3.68-2.41 2.32c-.27.27-.49.49-1 .49l.36-5.09 9.26-8.37c.4-.36-.09-.56-.63-.2L5.78 13.6.85 12.06c-1.07-.34-1.09-1.07.22-1.58L20.35 3c.9-.33 1.68.2 1.45.2Z"
+                />
+
+            </svg>
+
+        </span>
+
+        Join CA Nitin Murarka on Telegram →
 
     </a>
 
 
 
-    <!-- Timer -->
 
-    <div class="timer-box">
 
-        Redirecting to Telegram in
+    <div class="features">
 
-        <span id="countdown">10</span>
 
-        seconds...
+        <div class="feat">
+
+            <div class="feat-icon">
+                📈
+            </div>
+
+
+            <div class="feat-text">
+
+                POINT 01 — Find Entry
+
+                <small>
+
+                    Learn how to identify potential entry areas
+                    through simple chart examples.
+
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="feat">
+
+            <div class="feat-icon">
+                🎯
+            </div>
+
+
+            <div class="feat-text">
+
+                POINT 02 — Set Target
+
+                <small>
+
+                    Understand how traders identify target levels
+                    and plan exits.
+
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="feat">
+
+            <div class="feat-icon">
+                🛡️
+            </div>
+
+
+            <div class="feat-text">
+
+                POINT 03 — Control Risk
+
+                <small>
+
+                    Learn about stop-loss levels and basic
+                    capital protection principles.
+
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="feat">
+
+            <div class="feat-icon">
+                🎓
+            </div>
+
+
+            <div class="feat-text">
+
+                Educational Community
+
+                <small>
+
+                    Trading content explained in a simple,
+                    beginner-friendly format.
+
+                </small>
+
+            </div>
+
+        </div>
+
 
     </div>
 
 
 
-    <!-- Profit -->
+   
 
-    <div class="profit-text">
+    <div class="trust">
 
-        <i class="fa-solid fa-trophy"
-            style="color: #ffcc00;"></i>
+        ✅
 
-        Always Profit – Daily Earn Up To
+        <b>
+            Free Community
+        </b>
 
-    </div>
-
-
-    <div class="profit-amount">
-
-        ₹5,000
-
-        <i class="fa-solid fa-trophy"
-            style="color: #ffcc00;"></i>
+        • Beginner Friendly • Educational
 
     </div>
 
 
 
-    <!-- Traders -->
-
-    <div class="traders-count">
-
-        <i class="fa-solid fa-users"></i>
-
-        23,636+ active traders earning daily
-
-    </div>
 
 
+    <a
+        class="btn-dark join-link"
+        href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
+    >
 
-    <!-- Join Now -->
-
-    <a href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
-        target="_blank"
-        class="action-btn btn-join-now">
-
-        <i class="fa-solid fa-bolt"></i>
-
-        Join Now
+        Open CA Nitin Murarka Telegram Channel →
 
     </a>
 
 
+    <p class="free-tag">
+        ✓ Free to join
+    </p>
 
-    <!-- Telegram -->
 
-    <a href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
-        target="_blank"
-        class="action-btn btn-telegram">
 
-        <i class="fa-brands fa-telegram"></i>
 
-        Join via Telegram
+    <div class="disc">
 
-    </a>
+        <strong>
+            Disclaimer:
+        </strong>
+
+        This website and Telegram community are for educational
+        and informational purposes only. Nothing shown here should
+        be considered investment, trading or financial advice.
+        Trading and investing involve financial risk.
+
+
+        <div class="agency">
+
+            Advertised by Sivi Ads Agency
+
+        </div>
+
+    </div>
 
 
 </div>
 
 
 
-<!-- ==============================
-     2 SECOND LOADER SCRIPT
-============================== -->
 
-<script>
 
-    window.addEventListener("load", function () {
+<a
+    class="float join-link"
+    href="https://telegram.me/+qSvpZaTaNX5mMWQ1"
+    aria-label="Join CA Nitin Murarka Telegram"
+>
 
-        setTimeout(function () {
+    <svg viewBox="0 0 24 24">
 
-            document
-                .getElementById("page-loader")
-                .classList.add("hide");
+        <path
+            d="M21.8 3.2 18.5 20c-.25 1.18-.91 1.47-1.85.92l-5-3.68-2.41 2.32c-.27.27-.49.49-1 .49l.36-5.09 9.26-8.37c.4-.36-.09-.56-.63-.2L5.78 13.6.85 12.06c-1.07-.34-1.09-1.07.22-1.58L20.35 3c.9-.33 1.68.2 1.45.2Z"
+        />
 
-        }, 1000);
+    </svg>
 
-    });
-
-</script>
+</a>
 
 
 
-<!-- ==============================
-     10 SECOND TELEGRAM REDIRECT
-============================== -->
-
-<script>
-
-    let timeLeft = 10;
-
-    const countdownElement =
-        document.getElementById('countdown');
-
-    const telegramLink =
-        "https://telegram.me/+qSvpZaTaNX5mMWQ1";
 
 
-    const timer = setInterval(() => {
-
-        timeLeft--;
-
-        countdownElement.textContent = timeLeft;
-
-
-        if (timeLeft <= 0) {
-
-            clearInterval(timer);
-
-            window.location.href =
-                telegramLink;
-
-        }
-
-    }, 1000);
-
-</script>
-```
-
+  <script src="script.js"></script>
 </body>
 
 </html>
-<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="470006ab-4982-4aa7-bb49-05db79680b20" data-app-host="app.netlify.com"></script>
